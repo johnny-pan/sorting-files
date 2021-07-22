@@ -33,7 +33,6 @@ def report(sorting_files):
         print ("{:<13} {:<5}".format(key, value))
 
 def main():
-
     total = {}
     sorting_files = {}
     no_extension = 'no_ext'
