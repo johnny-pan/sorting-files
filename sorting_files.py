@@ -35,8 +35,8 @@ def report(sorting_files):
 def main():
 
     total = {}
-    no_extension = 'no_extension'
     sorting_files = {}
+    no_extension = 'no_ext'
     sorting_files[no_extension] = 0
     directory = os.getcwd()
     files = os.listdir(directory)
