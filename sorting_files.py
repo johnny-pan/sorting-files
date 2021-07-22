@@ -19,7 +19,7 @@ def remove_accents(filename, allow_unicode=False):
     return value
 
 def sanitize_filename(filename):
-    under_score = ['?','(',')','[',']',',','-','.',' '] 
+    under_score = ['<','>','%','$','&','?','(',')','[',']',',',':',';','=','-','.',' '] 
     filename = remove_accents(filename).lower()
     for char in filename:
         if (char in under_score): filename = filename.replace(char,'_')
